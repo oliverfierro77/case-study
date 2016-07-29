@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:target/db/example
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
