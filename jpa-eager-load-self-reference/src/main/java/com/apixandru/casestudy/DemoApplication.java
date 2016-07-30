@@ -52,13 +52,13 @@ public class DemoApplication implements CommandLineRunner {
             int i = random.nextInt(all.size());
             Node node1 = all.get(i);
             if (!node1.canReach(node) && !node.canReach(node1)) {
-                node1.getChildren().add(node);
-                try {
-                    nodeRepo.save(node1);
-                } catch (Exception e) {
-                    System.out.println("a");
-                }
+                node1.getChildren().add(node);                
             }
+        }
+        try {
+            all.forEach(nodeRepo::save);
+        } catch (Exception e) {
+            System.out.println("a");
         }
         nodeRepo.flush();
         entityManager.clear();
