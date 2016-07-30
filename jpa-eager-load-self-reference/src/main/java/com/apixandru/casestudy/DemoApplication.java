@@ -47,6 +47,7 @@ public class DemoApplication implements CommandLineRunner {
 
         Random random = new Random();
         List<Node> all = nodeRepo.findAll();
+        System.out.println("Found all");
         for (Node node : all) {
             int i = random.nextInt(all.size());
             Node node1 = all.get(i);
@@ -75,7 +76,9 @@ public class DemoApplication implements CommandLineRunner {
     }
 
     private void printSalmonella() {
-        for (Node node : salmonella.findAll()) {
+        List<Node> findAll = nodeRepo.findAll();
+        System.out.println(salmonella.findAll().equals(findAll));
+        for (Node node : findAll) {
             System.out.println(node);
         }
         entityManager.clear();
