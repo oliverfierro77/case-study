@@ -11,7 +11,7 @@ import java.util.List;
  * @since Jul 29, 2016
  */
 @Component
-public class Salmonella {
+public class CustomNodeRepo {
 
     @PersistenceContext
     private EntityManager entityManager;

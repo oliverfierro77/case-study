@@ -17,10 +17,10 @@ import java.util.Random;
 public class DemoApplication implements CommandLineRunner {
 
     @Autowired
-    private Salmonella salmonella;
+    private CustomNodeRepo customRepo;
 
     @Autowired
-    private NodeRepo nodeRepo;
+    private NodeRepo jpaRepo;
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -37,30 +37,26 @@ public class DemoApplication implements CommandLineRunner {
             node.setName("node " + i);
             nodes.add(node);
         }
-        nodeRepo.save(nodes);
-        nodeRepo.flush();
+        jpaRepo.save(nodes);
+        jpaRepo.flush();
 
         entityManager.clear();
     }
 
-    private void generateLinks() {
-
+    private void linkNodes() {
         Random random = new Random();
-        List<Node> all = nodeRepo.findAll();
-        System.out.println("Found all");
+        List<Node> all = jpaRepo.findAll();
         for (Node node : all) {
             int i = random.nextInt(all.size());
             Node node1 = all.get(i);
             if (!node1.canReach(node) && !node.canReach(node1)) {
-                node1.getChildren().add(node);                
+                node1.getChildren().add(node);
             }
         }
-        try {
-            all.forEach(nodeRepo::save);
-        } catch (Exception e) {
-            System.out.println("a");
-        }
-        nodeRepo.flush();
+
+        jpaRepo.save(all);
+        jpaRepo.flush();
+
         entityManager.clear();
     }
 
@@ -68,26 +64,24 @@ public class DemoApplication implements CommandLineRunner {
     public void run(String... strings) throws Exception {
         createNodes();
         System.out.println("///");
-        generateLinks();
+        linkNodes();
         System.out.println("///");
-        printLinks();
+        fetchJpaRepository();
         System.out.println("///");
-        printSalmonella();
+        fetchCustomRepository();
     }
 
-    private void printSalmonella() {
-        List<Node> findAll = nodeRepo.findAll();
-        System.out.println(salmonella.findAll().equals(findAll));
-        for (Node node : findAll) {
-            System.out.println(node);
-        }
-        entityManager.clear();
+    private void fetchCustomRepository() {
+        iterateAndCheck(customRepo.findAll());
     }
 
-    private void printLinks() {
-        for (Node node : nodeRepo.findAll()) {
-            System.out.println(node);
-        }
+    private void fetchJpaRepository() {
+        iterateAndCheck(jpaRepo.findAll());
+    }
+
+    private void iterateAndCheck(List<Node> all) {
+        System.out.println(all.size());
+        all.forEach(System.out::println);
         entityManager.clear();
     }
 
