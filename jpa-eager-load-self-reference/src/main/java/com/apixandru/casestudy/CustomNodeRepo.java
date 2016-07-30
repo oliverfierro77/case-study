@@ -17,7 +17,7 @@ public class CustomNodeRepo {
     private EntityManager entityManager;
 
     public List<Node> findAll() {
-        return entityManager.createQuery("SELECT node FROM Node AS node LEFT JOIN FETCH node.children").getResultList();
+        return entityManager.createQuery("SELECT DISTINCT node FROM Node AS node LEFT JOIN FETCH node.children").getResultList();
     }
 
 }

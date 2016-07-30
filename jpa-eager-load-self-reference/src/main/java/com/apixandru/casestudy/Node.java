@@ -1,6 +1,7 @@
 package com.apixandru.casestudy;
 
-import java.util.Set;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,9 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+import java.util.Set;
 
 /**
  * @author Alexandru-Constantin Bledea
@@ -95,6 +94,6 @@ public class Node {
             return false;
         return true;
     }
-    
-    
+
+
 }

@@ -69,6 +69,14 @@ public class DemoApplication implements CommandLineRunner {
         fetchJpaRepository();
         System.out.println("///");
         fetchCustomRepository();
+        System.out.println("///");
+        ensureSameElements();
+    }
+
+    private void ensureSameElements() {
+        if (!customRepo.findAll().equals(jpaRepo.findAll())) {
+            throw new IllegalArgumentException();
+        }
     }
 
     private void fetchCustomRepository() {
