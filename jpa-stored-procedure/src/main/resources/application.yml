@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:49161:xe
+    username: system
+    password: oracle
+    driverClassName: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
