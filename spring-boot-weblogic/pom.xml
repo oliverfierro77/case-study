@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.apixandru.casestudy</groupId>
+    <artifactId>spring-boot-weblogic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+    <properties>
+        <version.java>1.8</version.java>
+        <version.maven.compiler>3.5.1</version.maven.compiler>
+        <version.maven.ear>2.10.1</version.maven.ear>
+        <version.maven.war>2.6</version.maven.war>
+        <version.spring.boot>1.4.0.RELEASE</version.spring.boot>
+    </properties>
+
+    <modules>
+        <module>spring-boot-weblogic-war</module>
+        <module>spring-boot-weblogic-ear</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${version.spring.boot}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-boot-weblogic-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version.maven.compiler}</version>
+                    <configuration>
+                        <source>${version.java}</source>
+                        <target>${version.java}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>${version.maven.ear}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${version.maven.war}</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
