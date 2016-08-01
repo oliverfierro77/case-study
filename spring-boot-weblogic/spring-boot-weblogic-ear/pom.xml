@@ -33,6 +33,14 @@
                         <webModule>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>spring-boot-weblogic-war</artifactId>
+
+                            <!--
+                            override the context root of the application so that instead of deploying to the default
+                            http://127.0.1.1:7001/spring-boot-weblogic-war
+                            we will deploy to
+                            http://127.0.1.1:7001/weblogic-demo
+                            -->
+                            <contextRoot>/weblogic-demo</contextRoot>
                         </webModule>
                     </modules>
                 </configuration>
