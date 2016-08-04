@@ -1,2 +1,6 @@
 server:
   context-path: /weblogic-demo
+
+spring:
+  datasource:
+    jndi-name: jdbc/weblogicdemo

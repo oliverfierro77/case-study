@@ -9,17 +9,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import java.util.Date;
+
 @SpringBootApplication
 @RestController
 public class SpringBootWeblogicApplication extends SpringBootServletInitializer implements WebApplicationInitializer {
+
+    @PersistenceContext
+    private EntityManager entityManager;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootWeblogicApplication.class, args);
     }
 
-    @RequestMapping(value = "/sample", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/current-date", method = RequestMethod.GET)
     public String sample() {
-        return "sample output";
+        return "current date: " + getCurrentDateFromDatabase();
+    }
+
+    private Date getCurrentDateFromDatabase() {
+        return (Date) entityManager.createNativeQuery("select sysdate from dual")
+                .getSingleResult();
     }
 
 
