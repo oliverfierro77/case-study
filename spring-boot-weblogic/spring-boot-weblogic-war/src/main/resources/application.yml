@@ -3,4 +3,5 @@ server:
 
 spring:
   datasource:
+    # this needs to be configured in weblogic
     jndi-name: jdbc/weblogicdemo

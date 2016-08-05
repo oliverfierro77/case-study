@@ -12,6 +12,10 @@
     </parent>
 
     <properties>
+        <!--
+        when we develop locally, we have it as a compile dependency
+        when we deploy to weblogic, we have this as provided
+        -->
         <dependencyScopeTomcat>provided</dependencyScopeTomcat>
     </properties>
 
