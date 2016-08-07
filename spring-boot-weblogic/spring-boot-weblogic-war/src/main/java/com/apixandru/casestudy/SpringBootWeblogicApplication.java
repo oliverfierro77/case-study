@@ -21,6 +21,7 @@ public class SpringBootWeblogicApplication extends SpringBootServletInitializer 
     private EntityManager entityManager;
 
     public static void main(String[] args) {
+        System.setProperty("spring.config.name", "weblogic-demo");
         SpringApplication.run(SpringBootWeblogicApplication.class, args);
     }
 
@@ -38,6 +39,7 @@ public class SpringBootWeblogicApplication extends SpringBootServletInitializer 
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        application.properties("spring.config.name:weblogic-demo");
         return application.sources(SpringBootWeblogicApplication.class);
     }
 
