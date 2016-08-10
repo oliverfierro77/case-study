@@ -10,4 +10,6 @@ public interface EmployeeSearch {
 
     List<EmployeeView> findEmployeesByName(String name);
 
+    List<EmployeeView> findEmployeesByName(String firstName, String lastName);
+
 }

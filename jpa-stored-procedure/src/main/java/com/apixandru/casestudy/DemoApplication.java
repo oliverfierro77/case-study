@@ -25,7 +25,7 @@ public class DemoApplication implements CommandLineRunner {
     public void run(String... strings) throws Exception {
         // run the sample sql to create the procedure, table and data before running this
 
-        employeeSearch.findEmployeesByName("")
+        employeeSearch.findEmployeesByName("", null)
                 .forEach(System.out::println);
     }
 

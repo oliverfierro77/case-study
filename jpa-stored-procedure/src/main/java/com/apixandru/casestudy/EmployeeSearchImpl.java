@@ -1,9 +1,9 @@
 package com.apixandru.casestudy;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 /**
@@ -13,12 +13,8 @@ import java.util.List;
 @Repository
 public class EmployeeSearchImpl implements EmployeeSearch {
 
-    private final EntityManager entityManager;
-
-    @Autowired
-    public EmployeeSearchImpl(EntityManager entityManager) {
-        this.entityManager = entityManager;
-    }
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     @SuppressWarnings("unchecked")
@@ -26,6 +22,16 @@ public class EmployeeSearchImpl implements EmployeeSearch {
         // this didn't work prior to hibernate 5
         return this.entityManager.createNamedStoredProcedureQuery("filter-employees")
                 .setParameter("name", name)
+                .getResultList();
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<EmployeeView> findEmployeesByName(String firstName, String lastName) {
+        // nullable parameters didn't work prior to 5.1
+        return this.entityManager.createNamedStoredProcedureQuery("search-employees")
+                .setParameter("in_first_name", firstName)
+                .setParameter("in_last_name", lastName)
                 .getResultList();
     }
 

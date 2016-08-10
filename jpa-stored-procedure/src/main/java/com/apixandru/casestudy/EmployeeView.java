@@ -5,6 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedStoredProcedureQueries;
 import javax.persistence.NamedStoredProcedureQuery;
 import javax.persistence.ParameterMode;
+import javax.persistence.QueryHint;
 import javax.persistence.StoredProcedureParameter;
 import java.io.Serializable;
 import java.util.Date;
@@ -13,15 +14,27 @@ import java.util.Date;
  * @author Alexandru-Constantin Bledea
  * @since July 30, 2016
  */
-@NamedStoredProcedureQueries(
+@NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(name = "filter-employees",
                 procedureName = "filter_employees",
                 parameters = {
                         @StoredProcedureParameter(mode = ParameterMode.IN, name = "name", type = String.class),
                         @StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, name = "ref_cursor", type = void.class)
                 },
+                resultClasses = EmployeeView.class),
+        @NamedStoredProcedureQuery(name = "search-employees",
+                procedureName = "SEARCH_EMPLOYEES",
+                hints = {
+                        @QueryHint(name = "hibernate.proc.param_null_passing.in_last_name", value = "true"),
+                        @QueryHint(name = "hibernate.proc.param_null_passing.in_first_name", value = "true")
+                },
+                parameters = {
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "in_last_name", type = String.class),
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "in_first_name", type = String.class),
+                        @StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, name = "ref_cursor", type = void.class)
+                },
                 resultClasses = EmployeeView.class)
-)
+})
 @Entity
 public class EmployeeView implements Serializable {
 
