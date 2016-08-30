@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:ns0="http://securedservice.weblogic.casestudy.apixandru.com/"
+            targetNamespace="http://securedservice.weblogic.casestudy.apixandru.com/">
+    <xsd:complexType name="askForOpinionAboutName">
+        <xsd:sequence>
+            <xsd:element name="arg0" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="askForOpinionAboutNameResponse">
+        <xsd:sequence>
+            <xsd:element name="return" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="askForOpinionAboutName" type="ns0:askForOpinionAboutName"/>
+    <xsd:element name="askForOpinionAboutNameResponse" type="ns0:askForOpinionAboutNameResponse"/>
+</xsd:schema>

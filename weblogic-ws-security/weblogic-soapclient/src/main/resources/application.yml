@@ -1,0 +1,3 @@
+server:
+  context-path: /weblogic-demo
+  port: 12311

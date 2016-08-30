@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.apixandru.casestudy</groupId>
+        <artifactId>weblogic-ws-security</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>weblogic-securedservice</artifactId>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>weblogic</groupId>
+            <artifactId>wls-api</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <!-- you wouldn't have this in a real project, you'd most likely have this deployed on a nexus or something-->
+            <systemPath>/home/stuff/binary/wls12130/wlserver/server/lib/wls-api.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+</project>
