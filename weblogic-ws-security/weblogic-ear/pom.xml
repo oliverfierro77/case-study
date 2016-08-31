@@ -22,11 +22,11 @@
             <type>war</type>
         </dependency>
 
-        <dependency>
-            <groupId>com.apixandru.casestudy</groupId>
-            <artifactId>weblogic-securedservice</artifactId>
-            <type>war</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.apixandru.casestudy</groupId>-->
+            <!--<artifactId>weblogic-securedservice</artifactId>-->
+            <!--<type>war</type>-->
+        <!--</dependency>-->
 
     </dependencies>
 
@@ -42,11 +42,11 @@
                             <artifactId>weblogic-soapclient</artifactId>
                             <contextRoot>/weblogic-demo</contextRoot>
                         </webModule>
-                        <webModule>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>weblogic-securedservice</artifactId>
-                            <contextRoot>/securedservice</contextRoot>
-                        </webModule>
+                        <!--<webModule>-->
+                            <!--<groupId>${project.groupId}</groupId>-->
+                            <!--<artifactId>weblogic-securedservice</artifactId>-->
+                            <!--<contextRoot>/securedservice</contextRoot>-->
+                        <!--</webModule>-->
                     </modules>
                 </configuration>
             </plugin>
