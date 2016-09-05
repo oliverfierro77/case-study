@@ -18,7 +18,6 @@
 
     <modules>
         <module>spring-boot-jms-base</module>
-        <module>spring-boot-jms-activemq</module>
     </modules>
 
     <dependencyManagement>
