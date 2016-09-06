@@ -23,13 +23,13 @@ import javax.jms.Session;
  */
 @EnableJms
 @SpringBootApplication
-public class BaseApplication implements CommandLineRunner {
+public class DemoJmsApplication implements CommandLineRunner {
 
     @Autowired
     private JmsTemplate jmsTemplate;
 
     public static void main(String[] args) {
-        SpringApplication.run(BaseApplication.class, args);
+        SpringApplication.run(DemoJmsApplication.class, args);
     }
 
     @Override
