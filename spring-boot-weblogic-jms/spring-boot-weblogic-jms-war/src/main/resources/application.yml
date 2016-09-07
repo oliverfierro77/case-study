@@ -1,0 +1,6 @@
+server:
+  context-path: /jms-demo
+
+spring:
+  jms:
+    jndi-name: jms.demoCF
