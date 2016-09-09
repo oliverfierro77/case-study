@@ -17,6 +17,7 @@ public class JmsConfiguration {
 
     @Bean
     JmsTemplate jmsTemplate(@Autowired ConnectionFactory connectionFactory) {
+        System.out.println(connectionFactory);
         JmsTemplate jmsTemplate = new JmsTemplate(connectionFactory);
         jmsTemplate.setDefaultDestinationName("jms.myQueue");
         jmsTemplate.setDestinationResolver(new JndiDestinationResolver());
