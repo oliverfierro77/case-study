@@ -4,5 +4,3 @@ server:
 spring:
   jms:
     jndi-name: jms.demoCF
-
-debug: true

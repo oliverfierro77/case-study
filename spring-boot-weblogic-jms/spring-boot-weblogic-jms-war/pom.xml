@@ -41,11 +41,6 @@
             <artifactId>jms-api</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-client</artifactId>
-        </dependency>
-
     </dependencies>
 
     <profiles>
@@ -54,6 +49,15 @@
             <properties>
                 <dependencyScopeTomcat>compile</dependencyScopeTomcat>
             </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>spring-boot-weblogic-jms-devconfig</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
+            </dependencies>
+
         </profile>
     </profiles>
 
