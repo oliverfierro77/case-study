@@ -1,10 +1,11 @@
 spring:
   datasource:
-    jndi-name: jndi/demo
-#    url: jdbc:oracle:thin:@localhost:49161:xe
-#    username: system
-#    password: oracle
-#    driverClassName: oracle.jdbc.OracleDriver
+#    jndi-name: jndi/demo
+    #this needs to be a shared database, we're deploying this in a cluster
+    url: jdbc:oracle:thin:@localhost:49161:xe
+    username: system
+    password: oracle
+    driverClassName: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
       ddl-auto: none
