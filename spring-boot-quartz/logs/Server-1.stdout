@@ -1,0 +1,393 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [zip:/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/stuff/binary/wls12130/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-09-24 08:56:48.308  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Starting SpringBootQuartzApplication on w530 with PID 9691 (/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/_wl_cls_gen.jar started by apixandru in /home/stuff/binary/wls12130/user_projects/domains/mydomain)
+2016-09-24 08:56:48.313  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : No active profile set, falling back to default profiles: default
+2016-09-24 08:56:48.393  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1642a377: startup date [Sat Sep 24 08:56:48 EEST 2016]; root of context hierarchy
+2016-09-24 08:56:50.497  INFO 9691 --- [ (self-tuning)'] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-09-24 08:56:50.669  INFO 9691 --- [ (self-tuning)'] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d398ad45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-24 08:56:50.756  INFO 9691 --- [ (self-tuning)'] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2362 ms
+2016-09-24 08:56:51.347  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-24 08:56:51.348  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2016-09-24 08:56:51.348  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-24 08:56:51.348  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-24 08:56:51.348  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-24 08:56:51.348  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-24 08:56:51.775  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA UserTransaction: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:56:51.776  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionManager: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:56:51.776  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionSynchronizationRegistry: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:56:51.776  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Support for WebLogic transaction names available
+2016-09-24 08:56:51.919  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:56:51.948  INFO 9691 --- [ (self-tuning)'] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-24 08:56:52.101  INFO 9691 --- [ (self-tuning)'] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-09-24 08:56:52.103  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-24 08:56:52.104  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-24 08:56:52.161  INFO 9691 --- [ (self-tuning)'] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-24 08:56:52.386  INFO 9691 --- [ (self-tuning)'] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-09-24 08:56:52.677  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:56:52.762  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2016-09-24 08:56:52.782  INFO 9691 --- [ (self-tuning)'] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-09-24 08:56:52.782  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.3 created.
+2016-09-24 08:56:52.791  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2016-09-24 08:56:52.794  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2016-09-24 08:56:52.795  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Demo Scheduler' with instanceId 'w5301474696612763'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2016-09-24 08:56:52.795  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'Demo Scheduler' initialized from an externally provided properties instance.
+2016-09-24 08:56:52.795  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.3
+2016-09-24 08:56:52.797  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@43694e1d
+2016-09-24 08:56:53.502  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1642a377: startup date [Sat Sep 24 08:56:48 EEST 2016]; root of context hierarchy
+2016-09-24 08:56:53.684  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-24 08:56:53.686  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-24 08:56:53.803  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:56:53.807  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:56:53.938  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:56:54.534  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-24 08:56:54.548  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-24 08:56:54.548  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2016-09-24 08:56:54.557  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : ClusterManager: detected 2 failed or restarted instances.
+2016-09-24 08:56:54.557  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : ClusterManager: Scanning for instance "w5301474696085295"'s failed in-progress jobs.
+2016-09-24 08:56:54.560  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : ClusterManager: Scanning for instance "w5301474696126361"'s failed in-progress jobs.
+2016-09-24 08:56:54.581  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696612763 started.
+2016-09-24 08:56:54.651  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Started SpringBootQuartzApplication in 7.227 seconds (JVM running for 573.163)
+2016-09-24 08:56:54.721  INFO 9691 --- [eduler_Worker-1] com.apixandru.casestudy.SampleJob        : Starting job
+2016-09-24 08:57:04.729  INFO 9691 --- [eduler_Worker-1] com.apixandru.casestudy.SampleJob        : Job done
+2016-09-24 08:57:11.649  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1642a377: startup date [Sat Sep 24 08:56:48 EEST 2016]; root of context hierarchy
+2016-09-24 08:57:11.651  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2016-09-24 08:57:11.652  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696612763 paused.
+2016-09-24 08:57:11.653  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2016-09-24 08:57:11.653  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696612763 shutting down.
+2016-09-24 08:57:11.653  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696612763 paused.
+2016-09-24 08:57:11.655  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696612763 shutdown complete.
+2016-09-24 08:57:11.655  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:57:11.665  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [zip:/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/stuff/binary/wls12130/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-09-24 08:57:43.095  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Starting SpringBootQuartzApplication on w530 with PID 9691 (/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/_wl_cls_gen.jar started by apixandru in /home/stuff/binary/wls12130/user_projects/domains/mydomain)
+2016-09-24 08:57:43.100  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : No active profile set, falling back to default profiles: default
+2016-09-24 08:57:43.188  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40cc073e: startup date [Sat Sep 24 08:57:43 EEST 2016]; root of context hierarchy
+2016-09-24 08:57:46.088  INFO 9691 --- [ (self-tuning)'] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-09-24 08:57:46.333  INFO 9691 --- [ (self-tuning)'] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c727e0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-24 08:57:46.481  INFO 9691 --- [ (self-tuning)'] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3293 ms
+2016-09-24 08:57:47.228  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-24 08:57:47.230  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2016-09-24 08:57:47.230  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-24 08:57:47.230  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-24 08:57:47.230  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-24 08:57:47.230  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-24 08:57:47.651  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA UserTransaction: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:57:47.651  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionManager: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:57:47.651  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionSynchronizationRegistry: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 08:57:47.652  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Support for WebLogic transaction names available
+2016-09-24 08:57:47.847  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:57:47.874  INFO 9691 --- [ (self-tuning)'] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-24 08:57:47.987  INFO 9691 --- [ (self-tuning)'] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-09-24 08:57:47.990  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-24 08:57:47.992  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-24 08:57:48.050  INFO 9691 --- [ (self-tuning)'] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-24 08:57:48.271  INFO 9691 --- [ (self-tuning)'] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-09-24 08:57:48.675  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:57:48.814  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2016-09-24 08:57:48.824  INFO 9691 --- [ (self-tuning)'] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-09-24 08:57:48.824  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.3 created.
+2016-09-24 08:57:48.835  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2016-09-24 08:57:48.838  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2016-09-24 08:57:48.839  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Demo Scheduler' with instanceId 'w5301474696668815'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2016-09-24 08:57:48.839  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'Demo Scheduler' initialized from an externally provided properties instance.
+2016-09-24 08:57:48.839  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.3
+2016-09-24 08:57:48.841  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@750eaa74
+2016-09-24 08:57:49.813  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40cc073e: startup date [Sat Sep 24 08:57:43 EEST 2016]; root of context hierarchy
+2016-09-24 08:57:49.985  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-24 08:57:49.987  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-24 08:57:50.114  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:57:50.116  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:57:50.230  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 08:57:51.068  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-24 08:57:51.117  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-24 08:57:51.118  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2016-09-24 08:57:51.297  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696668815 started.
+2016-09-24 08:57:51.326  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Started SpringBootQuartzApplication in 9.103 seconds (JVM running for 629.839)
+2016-09-24 08:58:10.738  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40cc073e: startup date [Sat Sep 24 08:57:43 EEST 2016]; root of context hierarchy
+2016-09-24 08:58:10.740  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2016-09-24 08:58:10.742  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696668815 paused.
+2016-09-24 08:58:10.745  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2016-09-24 08:58:10.745  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696668815 shutting down.
+2016-09-24 08:58:10.745  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696668815 paused.
+2016-09-24 08:58:10.748  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696668815 shutdown complete.
+2016-09-24 08:58:10.748  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 08:58:10.749  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [zip:/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/stuff/binary/wls12130/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-09-24 08:59:58.628  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Starting SpringBootQuartzApplication on w530 with PID 9691 (/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/_wl_cls_gen.jar started by apixandru in /home/stuff/binary/wls12130/user_projects/domains/mydomain)
+2016-09-24 08:59:58.633  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : No active profile set, falling back to default profiles: default
+2016-09-24 08:59:58.664  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40ccb9ec: startup date [Sat Sep 24 08:59:58 EEST 2016]; root of context hierarchy
+2016-09-24 09:00:00.348  INFO 9691 --- [ (self-tuning)'] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-09-24 09:00:00.501  INFO 9691 --- [ (self-tuning)'] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6b784f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-24 09:00:00.556  INFO 9691 --- [ (self-tuning)'] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1892 ms
+2016-09-24 09:00:01.098  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-24 09:00:01.099  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2016-09-24 09:00:01.099  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-24 09:00:01.099  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-24 09:00:01.099  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-24 09:00:01.099  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-24 09:00:01.407  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA UserTransaction: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:01.407  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionManager: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:01.407  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionSynchronizationRegistry: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:01.407  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Support for WebLogic transaction names available
+2016-09-24 09:00:01.488  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:01.502  INFO 9691 --- [ (self-tuning)'] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-24 09:00:01.571  INFO 9691 --- [ (self-tuning)'] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-09-24 09:00:01.573  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-24 09:00:01.574  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-24 09:00:01.622  INFO 9691 --- [ (self-tuning)'] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-24 09:00:01.802  INFO 9691 --- [ (self-tuning)'] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-09-24 09:00:02.012  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:02.107  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2016-09-24 09:00:02.126  INFO 9691 --- [ (self-tuning)'] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-09-24 09:00:02.126  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.3 created.
+2016-09-24 09:00:02.139  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2016-09-24 09:00:02.142  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2016-09-24 09:00:02.143  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Demo Scheduler' with instanceId 'w5301474696802108'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2016-09-24 09:00:02.143  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'Demo Scheduler' initialized from an externally provided properties instance.
+2016-09-24 09:00:02.143  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.3
+2016-09-24 09:00:02.145  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@d2a7c0a
+2016-09-24 09:00:02.815  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40ccb9ec: startup date [Sat Sep 24 08:59:58 EEST 2016]; root of context hierarchy
+2016-09-24 09:00:02.959  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-24 09:00:02.961  INFO 9691 --- [ (self-tuning)'] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-24 09:00:03.069  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 09:00:03.069  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 09:00:03.163  INFO 9691 --- [ (self-tuning)'] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-24 09:00:03.601  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-24 09:00:03.612  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-09-24 09:00:03.612  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2016-09-24 09:00:03.759  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696802108 started.
+2016-09-24 09:00:03.772  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Started SpringBootQuartzApplication in 5.635 seconds (JVM running for 762.285)
+2016-09-24 09:00:24.002  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40ccb9ec: startup date [Sat Sep 24 08:59:58 EEST 2016]; root of context hierarchy
+2016-09-24 09:00:24.005  INFO 9691 --- [ (self-tuning)'] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2016-09-24 09:00:24.007  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696802108 paused.
+2016-09-24 09:00:24.008  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2016-09-24 09:00:24.008  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696802108 shutting down.
+2016-09-24 09:00:24.008  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696802108 paused.
+2016-09-24 09:00:24.010  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler Demo Scheduler_$_w5301474696802108 shutdown complete.
+2016-09-24 09:00:24.011  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:24.013  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [zip:/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/stuff/binary/wls12130/wlserver/modules/features/weblogic.server.merged.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-09-24 09:00:52.362  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : Starting SpringBootQuartzApplication on w530 with PID 9691 (/home/stuff/binary/wls12130/user_projects/domains/mydomain/servers/Server-1/tmp/_WL_user/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT/1b3cha/war/WEB-INF/lib/_wl_cls_gen.jar started by apixandru in /home/stuff/binary/wls12130/user_projects/domains/mydomain)
+2016-09-24 09:00:52.369  INFO 9691 --- [ (self-tuning)'] c.a.c.SpringBootQuartzApplication        : No active profile set, falling back to default profiles: default
+2016-09-24 09:00:52.412  INFO 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7929bf2d: startup date [Sat Sep 24 09:00:52 EEST 2016]; root of context hierarchy
+2016-09-24 09:00:54.246  INFO 9691 --- [ (self-tuning)'] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-09-24 09:00:54.357  INFO 9691 --- [ (self-tuning)'] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53fda05c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-24 09:00:54.434  INFO 9691 --- [ (self-tuning)'] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2022 ms
+2016-09-24 09:00:54.903  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-24 09:00:54.904  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2016-09-24 09:00:54.904  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-24 09:00:54.904  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-24 09:00:54.904  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-24 09:00:54.905  INFO 9691 --- [ (self-tuning)'] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-24 09:00:55.222  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA UserTransaction: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:55.222  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionManager: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:55.223  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Using JTA TransactionSynchronizationRegistry: ServerTM[ServerCoordinatorDescriptor=(CoordinatorURL=Server-1+127.0.1.1:27001+mydomain+t3+ CoordinatorNonSecureURL=Server-1+127.0.1.1:27001+mydomain+t3+ coordinatorSecureURL=null, XAResources={JDBC Data Source-0_mydomain, WSATGatewayRM_Server-1_mydomain},NonXAResources={})]
+2016-09-24 09:00:55.223  INFO 9691 --- [ (self-tuning)'] o.s.t.jta.WebLogicJtaTransactionManager  : Support for WebLogic transaction names available
+2016-09-24 09:00:55.306  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:55.321  INFO 9691 --- [ (self-tuning)'] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-24 09:00:55.389  INFO 9691 --- [ (self-tuning)'] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-09-24 09:00:55.391  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-24 09:00:55.392  INFO 9691 --- [ (self-tuning)'] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-24 09:00:55.435  INFO 9691 --- [ (self-tuning)'] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-24 09:00:55.572  INFO 9691 --- [ (self-tuning)'] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-09-24 09:00:55.809  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:55.920  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2016-09-24 09:00:55.934  INFO 9691 --- [ (self-tuning)'] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-09-24 09:00:55.934  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.3 created.
+2016-09-24 09:00:55.944  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2016-09-24 09:00:55.947  INFO 9691 --- [ (self-tuning)'] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2016-09-24 09:00:55.948  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'Demo Scheduler' with instanceId 'w5301474696855921'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2016-09-24 09:00:55.948  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'Demo Scheduler' initialized from an externally provided properties instance.
+2016-09-24 09:00:55.948  INFO 9691 --- [ (self-tuning)'] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.3
+2016-09-24 09:00:55.950  INFO 9691 --- [ (self-tuning)'] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5ee158f1
+2016-09-24 09:00:56.662  WARN 9691 --- [ (self-tuning)'] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerFactoryBean' defined in com.apixandru.casestudy.SpringBootQuartzApplication: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve trigger: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ? [See nested exception: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?]
+2016-09-24 09:00:56.663  INFO 9691 --- [ (self-tuning)'] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-09-24 09:00:56.663  INFO 9691 --- [ (self-tuning)'] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-09-24 09:00:56.673  INFO 9691 --- [ (self-tuning)'] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2016-09-24 09:00:56.688 ERROR 9691 --- [ (self-tuning)'] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerFactoryBean' defined in com.apixandru.casestudy.SpringBootQuartzApplication: Invocation of init method failed; nested exception is org.quartz.JobPersistenceException: Couldn't retrieve trigger: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ? [See nested exception: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:732) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializer(WebAppServletContext.java:1394) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1331) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1317) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppServletContext.preloadResources(WebAppServletContext.java:1834) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppServletContext.start(WebAppServletContext.java:2876) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppModule.startContexts(WebAppModule.java:1661) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.servlet.internal.WebAppModule.start(WebAppModule.java:823) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:360) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:356) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:138) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.flow.ModuleListenerInvoker.start(ModuleListenerInvoker.java:124) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:216) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:211) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.flow.ModuleStateDriver.start(ModuleStateDriver.java:73) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.flow.StartModulesFlow.activate(StartModulesFlow.java:24) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.BaseDeployment$2.next(BaseDeployment.java:729) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.BaseDeployment.activate(BaseDeployment.java:258) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.EarDeployment.activate(EarDeployment.java:61) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.application.internal.DeploymentStateChecker.activate(DeploymentStateChecker.java:165) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.AppContainerInvoker.activate(AppContainerInvoker.java:80) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.activate(AbstractOperation.java:587) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.activateDeployment(ActivateOperation.java:150) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doCommit(ActivateOperation.java:116) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.commit(AbstractOperation.java:339) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentCommit(DeploymentManager.java:846) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.DeploymentManager.activateDeploymentList(DeploymentManager.java:1275) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleCommit(DeploymentManager.java:442) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.commit(DeploymentServiceDispatcher.java:176) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doCommitCallback(DeploymentReceiverCallbackDeliverer.java:195) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$100(DeploymentReceiverCallbackDeliverer.java:13) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$2.run(DeploymentReceiverCallbackDeliverer.java:68) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:553) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311) [weblogic.server.merged.jar:12.1.3.0.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263) [weblogic.server.merged.jar:12.1.3.0.0]
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve trigger: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1533) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$12.execute(JobStoreSupport.java:1522) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3739) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1519) ~[quartz-2.2.3.jar:na]
+	at org.quartz.core.QuartzScheduler.getTrigger(QuartzScheduler.java:1530) ~[quartz-2.2.3.jar:na]
+	at org.quartz.core.QuartzScheduler.rescheduleJob(QuartzScheduler.java:1126) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.StdScheduler.rescheduleJob(StdScheduler.java:321) ~[quartz-2.2.3.jar:na]
+	at org.springframework.scheduling.quartz.SchedulerAccessor.addTriggerToScheduler(SchedulerAccessor.java:302) ~[spring-context-support-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.scheduling.quartz.SchedulerAccessor.registerJobsAndTriggers(SchedulerAccessor.java:235) ~[spring-context-support-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.afterPropertiesSet(SchedulerFactoryBean.java:512) ~[spring-context-support-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate.loadExtendedTriggerProperties(SimpleTriggerPersistenceDelegate.java:95) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTrigger(StdJDBCDelegate.java:1819) ~[quartz-2.2.3.jar:na]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1531) ~[quartz-2.2.3.jar:na]
+	... 66 common frames omitted
+
+<Sep 24, 2016 9:00:56 AM EEST> <Error> <Deployer> <BEA-149265> <Failure occurred in the execution of deployment request with ID "2509626139646" for task "19". Error is: "weblogic.application.ModuleException: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?"
+weblogic.application.ModuleException: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:140)
+	at weblogic.application.internal.flow.ModuleListenerInvoker.start(ModuleListenerInvoker.java:124)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:216)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:211)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	Truncated. see log file for complete stacktrace
+Caused By: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate.loadExtendedTriggerProperties(SimpleTriggerPersistenceDelegate.java:95)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTrigger(StdJDBCDelegate.java:1819)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1531)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$12.execute(JobStoreSupport.java:1522)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	Truncated. see log file for complete stacktrace
+> 
+<Sep 24, 2016 9:00:56 AM EEST> <Error> <Deployer> <BEA-149202> <Encountered an exception while attempting to commit the 1 task for the application "spring-boot-weblogic-jms-ear-1.0-SNAPSHOT".> 
+
+

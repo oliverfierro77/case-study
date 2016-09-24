@@ -1,0 +1,237 @@
+
+####<Sep 24, 2016 8:54:07 AM EEST> <Warning> <netuix> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696447930> <BEA-423420> <Redirect is executed in begin or refresh action. Redirect url is /console/console.portal?_nfpb=true&_pageLabel=GlobalJDBCDataSourceTablePage.> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696518898> <BEA-149038> <Initiating task for JDBC Data Source-0 : [Deployer:149026]activate application JDBC Data Source-0 on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <JDBC> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518916> <BEA-001177> <Creating data source connection pool named JDBC Data Source-0, URL = jdbc:oracle:thin:@localhost:49161:xe, Properties = user=system;.> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <Common> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518916> <BEA-000626> <Free resources in pool "JDBC Data Source-0" will be tested every "120" seconds.> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <JDBC> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518984> <BEA-001516> <Data source connection pool "JDBC Data Source-0" connected to Database: "Oracle", Version: "Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production".> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <JDBC> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518985> <BEA-001517> <Data source connection pool "JDBC Data Source-0" using Driver: "Oracle JDBC driver", Version: "12.1.0.2.0".> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <Common> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518986> <BEA-000628> <Created "1" resources for pool "JDBC Data Source-0", out of which "1" are available and "0" are unavailable.> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <Common> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518987> <BEA-000640> <Resource Pool "JDBC Data Source-0" resuming by external command (multi data source or console or other).> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <JDBC> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518988> <BEA-001124> <Created Connection Pool named JDBC Data Source-0.> 
+####<Sep 24, 2016 8:55:18 AM EEST> <Info> <Common> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696518988> <BEA-000638> <Resource Pool "JDBC Data Source-0" is being suspended by an external command (multi data source or console or other).> 
+####<Sep 24, 2016 8:55:19 AM EEST> <Info> <Common> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696519117> <BEA-000640> <Resource Pool "JDBC Data Source-0" resuming by external command (multi data source or console or other).> 
+####<Sep 24, 2016 8:55:19 AM EEST> <Info> <JDBC> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696519117> <BEA-001174> <Creating data source named JDBC Data Source-0, JNDI Name = jndi/demo.> 
+####<Sep 24, 2016 8:55:19 AM EEST> <Info> <JDBC> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696519185> <BEA-001512> <Data source JDBC Data Source-0 has been successfully created.> 
+####<Sep 24, 2016 8:55:19 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '3' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696519207> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]activate application JDBC Data Source-0 on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:56:33 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696593070> <BEA-260121> <Initiating deploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: /home/stuff/repos/case-study/spring-boot-weblogic-jms/spring-boot-weblogic-jms-ear/target/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT.ear], to Cluster-0 .> 
+####<Sep 24, 2016 8:56:43 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696603094> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 8:56:55 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696615298> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 8:57:01 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696621477> <BEA-260121> <Initiating undeploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: null], to Cluster-0 .> 
+####<Sep 24, 2016 8:57:11 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696631496> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 8:57:11 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696631726> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 8:57:11 AM EEST> <Warning> <netuix> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696631832> <BEA-423420> <Redirect is executed in begin or refresh action. Redirect url is /console/console.portal?_nfpb=true&_pageLabel=AppDeploymentsControlPage.> 
+####<Sep 24, 2016 8:57:20 AM EEST> <Info> <Health> <w530> <myserver> <weblogic.GCMonitor> <<anonymous>> <> <> <1474696640971> <BEA-310002> <21% of the total memory in the server is free.> 
+####<Sep 24, 2016 8:57:26 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696646266> <BEA-260121> <Initiating deploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: /home/stuff/repos/case-study/spring-boot-weblogic-jms/spring-boot-weblogic-jms-ear/target/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT.ear], to myserver Cluster-0 .> 
+####<Sep 24, 2016 8:57:36 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696656291> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:57:38 AM EEST> <Info> <Health> <w530> <myserver> <weblogic.GCMonitor> <<anonymous>> <> <> <1474696658031> <BEA-310002> <69% of the total memory in the server is free.> 
+####<Sep 24, 2016 8:57:38 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696658482> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_NEW to STATE_PREPARED on server myserver.> 
+####<Sep 24, 2016 8:57:38 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696658565> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_NEW to STATE_PREPARED on server myserver.> 
+####<Sep 24, 2016 8:57:40 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696660417> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_PREPARED to STATE_ADMIN on server myserver.> 
+####<Sep 24, 2016 8:57:40 AM EEST> <Info> <org.hibernate.validator.engine.resolver.DefaultTraversableResolver> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696660449> <BEA-000000> <Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.> 
+####<Sep 24, 2016 8:57:40 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696660455> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_PREPARED to STATE_ADMIN on server myserver.> 
+####<Sep 24, 2016 8:57:42 AM EEST> <Info> <ServletContext-/jms-demo> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696662098> <BEA-000000> <2 Spring WebApplicationInitializers detected on classpath> 
+####<Sep 24, 2016 8:57:43 AM EEST> <Info> <org.hibernate.validator.engine.resolver.DefaultTraversableResolver> <w530> <myserver> <background-preinit> <<anonymous>> <> <> <1474696663266> <BEA-000000> <Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.> 
+####<Sep 24, 2016 8:57:47 AM EEST> <Info> <ServletContext-/jms-demo> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696667008> <BEA-000000> <Initializing Spring embedded WebApplicationContext> 
+####<Sep 24, 2016 8:57:47 AM EEST> <Info> <org.hibernate.validator.engine.resolver.DefaultTraversableResolver> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696667062> <BEA-000000> <Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.> 
+####<Sep 24, 2016 8:57:50 AM EEST> <Info> <org.hibernate.validator.engine.resolver.DefaultTraversableResolver> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696670236> <BEA-000000> <Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.> 
+####<Sep 24, 2016 8:57:52 AM EEST> <Info> <org.hibernate.validator.engine.resolver.DefaultTraversableResolver> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696672020> <BEA-000000> <Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.> 
+####<Sep 24, 2016 8:57:52 AM EEST> <Info> <Common> <w530> <myserver> <QuartzScheduler_Demo Scheduler-w5301474696670858_MisfireHandler> <<anonymous>> <> <> <1474696672817> <BEA-000628> <Created "1" resources for pool "JDBC Data Source-0", out of which "1" are available and "0" are unavailable.> 
+####<Sep 24, 2016 8:57:53 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696673038> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_ADMIN to STATE_ACTIVE on server myserver.> 
+####<Sep 24, 2016 8:57:53 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696673038> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_ADMIN to STATE_ACTIVE on server myserver.> 
+####<Sep 24, 2016 8:57:53 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '2' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696673044> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:58:00 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696680486> <BEA-260121> <Initiating undeploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: null], to myserver Cluster-0 .> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696690559> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690724> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_ACTIVE to STATE_ADMIN on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690726> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_ACTIVE to STATE_ADMIN on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690731> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_ADMIN to STATE_PREPARED on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <ServletContext-/jms-demo> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696690734> <BEA-000000> <Closing Spring root WebApplicationContext> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690755> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_ADMIN to STATE_PREPARED on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690803> <BEA-149059> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT is transitioning from STATE_PREPARED to STATE_NEW on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690805> <BEA-149060> <Module /jms-demo of application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT successfully transitioned from STATE_PREPARED to STATE_NEW on server myserver.> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696690829> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on myserver,Cluster-0..> 
+####<Sep 24, 2016 8:58:10 AM EEST> <Warning> <netuix> <w530> <myserver> <[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696690940> <BEA-423420> <Redirect is executed in begin or refresh action. Redirect url is /console/console.portal?_nfpb=true&_pageLabel=AppDeploymentsControlPage.> 
+####<Sep 24, 2016 8:58:38 AM EEST> <Info> <Health> <w530> <myserver> <weblogic.GCMonitor> <<anonymous>> <> <> <1474696718032> <BEA-310002> <43% of the total memory in the server is free.> 
+####<Sep 24, 2016 8:59:45 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696785349> <BEA-260121> <Initiating deploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: /home/stuff/repos/case-study/spring-boot-weblogic-jms/spring-boot-weblogic-jms-ear/target/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT.ear], to Cluster-0 .> 
+####<Sep 24, 2016 8:59:55 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696795378> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 9:00:04 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '3' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696804047> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 9:00:13 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696813820> <BEA-260121> <Initiating undeploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: null], to Cluster-0 .> 
+####<Sep 24, 2016 9:00:23 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696823836> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 9:00:24 AM EEST> <Info> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '3' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696824069> <BEA-149074> <Successfully completed deployment task: [Deployer:149026]remove application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 9:00:24 AM EEST> <Warning> <netuix> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696824175> <BEA-423420> <Redirect is executed in begin or refresh action. Redirect url is /console/console.portal?_nfpb=true&_pageLabel=AppDeploymentsControlPage.> 
+####<Sep 24, 2016 9:00:38 AM EEST> <Info> <Health> <w530> <myserver> <weblogic.GCMonitor> <<anonymous>> <> <> <1474696838033> <BEA-310002> <30% of the total memory in the server is free.> 
+####<Sep 24, 2016 9:00:39 AM EEST> <Info> <J2EE Deployment SPI> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696839337> <BEA-260121> <Initiating deploy operation for application, spring-boot-weblogic-jms-ear-1.0-SNAPSHOT [archive: /home/stuff/repos/case-study/spring-boot-weblogic-jms/spring-boot-weblogic-jms-ear/target/spring-boot-weblogic-jms-ear-1.0-SNAPSHOT.ear], to Cluster-0 .> 
+####<Sep 24, 2016 9:00:49 AM EEST> <Info> <Deployer> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696849356> <BEA-149038> <Initiating task for spring-boot-weblogic-jms-ear-1.0-SNAPSHOT : [Deployer:149026]deploy application spring-boot-weblogic-jms-ear-1.0-SNAPSHOT on Cluster-0..> 
+####<Sep 24, 2016 9:00:58 AM EEST> <Warning> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696858217> <BEA-149004> <Failures were detected while initiating deploy task for application "spring-boot-weblogic-jms-ear-1.0-SNAPSHOT".> 
+####<Sep 24, 2016 9:00:58 AM EEST> <Warning> <Deployer> <w530> <myserver> <[STANDBY] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'> <<WLS Kernel>> <> <> <1474696858217> <BEA-149078> <Stack trace for message 149004
+weblogic.application.ModuleException: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:140)
+	at weblogic.application.internal.flow.ModuleListenerInvoker.start(ModuleListenerInvoker.java:124)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:216)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:211)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.flow.ModuleStateDriver.start(ModuleStateDriver.java:73)
+	at weblogic.application.internal.flow.StartModulesFlow.activate(StartModulesFlow.java:24)
+	at weblogic.application.internal.BaseDeployment$2.next(BaseDeployment.java:729)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.BaseDeployment.activate(BaseDeployment.java:258)
+	at weblogic.application.internal.EarDeployment.activate(EarDeployment.java:61)
+	at weblogic.application.internal.DeploymentStateChecker.activate(DeploymentStateChecker.java:165)
+	at weblogic.deploy.internal.targetserver.AppContainerInvoker.activate(AppContainerInvoker.java:80)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.activate(AbstractOperation.java:587)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.activateDeployment(ActivateOperation.java:150)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doCommit(ActivateOperation.java:116)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.commit(AbstractOperation.java:339)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentCommit(DeploymentManager.java:846)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.activateDeploymentList(DeploymentManager.java:1275)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleCommit(DeploymentManager.java:442)
+	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.commit(DeploymentServiceDispatcher.java:176)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doCommitCallback(DeploymentReceiverCallbackDeliverer.java:195)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$100(DeploymentReceiverCallbackDeliverer.java:13)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$2.run(DeploymentReceiverCallbackDeliverer.java:68)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:553)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+Caused By: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate.loadExtendedTriggerProperties(SimpleTriggerPersistenceDelegate.java:95)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTrigger(StdJDBCDelegate.java:1819)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1531)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$12.execute(JobStoreSupport.java:1522)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3739)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1519)
+	at org.quartz.core.QuartzScheduler.getTrigger(QuartzScheduler.java:1530)
+	at org.quartz.core.QuartzScheduler.rescheduleJob(QuartzScheduler.java:1126)
+	at org.quartz.impl.StdScheduler.rescheduleJob(StdScheduler.java:321)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.addTriggerToScheduler(SchedulerAccessor.java:302)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.registerJobsAndTriggers(SchedulerAccessor.java:235)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.afterPropertiesSet(SchedulerFactoryBean.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:732)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86)
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializer(WebAppServletContext.java:1394)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1331)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1317)
+	at weblogic.servlet.internal.WebAppServletContext.preloadResources(WebAppServletContext.java:1834)
+	at weblogic.servlet.internal.WebAppServletContext.start(WebAppServletContext.java:2876)
+	at weblogic.servlet.internal.WebAppModule.startContexts(WebAppModule.java:1661)
+	at weblogic.servlet.internal.WebAppModule.start(WebAppModule.java:823)
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:360)
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:356)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:138)
+	at weblogic.application.internal.flow.ModuleListenerInvoker.start(ModuleListenerInvoker.java:124)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:216)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:211)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.flow.ModuleStateDriver.start(ModuleStateDriver.java:73)
+	at weblogic.application.internal.flow.StartModulesFlow.activate(StartModulesFlow.java:24)
+	at weblogic.application.internal.BaseDeployment$2.next(BaseDeployment.java:729)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.BaseDeployment.activate(BaseDeployment.java:258)
+	at weblogic.application.internal.EarDeployment.activate(EarDeployment.java:61)
+	at weblogic.application.internal.DeploymentStateChecker.activate(DeploymentStateChecker.java:165)
+	at weblogic.deploy.internal.targetserver.AppContainerInvoker.activate(AppContainerInvoker.java:80)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.activate(AbstractOperation.java:587)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.activateDeployment(ActivateOperation.java:150)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doCommit(ActivateOperation.java:116)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.commit(AbstractOperation.java:339)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentCommit(DeploymentManager.java:846)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.activateDeploymentList(DeploymentManager.java:1275)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleCommit(DeploymentManager.java:442)
+	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.commit(DeploymentServiceDispatcher.java:176)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doCommitCallback(DeploymentReceiverCallbackDeliverer.java:195)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$100(DeploymentReceiverCallbackDeliverer.java:13)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$2.run(DeploymentReceiverCallbackDeliverer.java:68)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:553)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+> 
+####<Sep 24, 2016 9:00:58 AM EEST> <Error> <Console> <w530> <myserver> <[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'> <admin> <> <> <1474696858243> <BEA-240003> <Administration Console encountered the following error: weblogic.application.ModuleException: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:140)
+	at weblogic.application.internal.flow.ModuleListenerInvoker.start(ModuleListenerInvoker.java:124)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:216)
+	at weblogic.application.internal.flow.ModuleStateDriver$3.next(ModuleStateDriver.java:211)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.flow.ModuleStateDriver.start(ModuleStateDriver.java:73)
+	at weblogic.application.internal.flow.StartModulesFlow.activate(StartModulesFlow.java:24)
+	at weblogic.application.internal.BaseDeployment$2.next(BaseDeployment.java:729)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.BaseDeployment.activate(BaseDeployment.java:258)
+	at weblogic.application.internal.EarDeployment.activate(EarDeployment.java:61)
+	at weblogic.application.internal.DeploymentStateChecker.activate(DeploymentStateChecker.java:165)
+	at weblogic.deploy.internal.targetserver.AppContainerInvoker.activate(AppContainerInvoker.java:80)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.activate(AbstractOperation.java:587)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.activateDeployment(ActivateOperation.java:150)
+	at weblogic.deploy.internal.targetserver.operations.ActivateOperation.doCommit(ActivateOperation.java:116)
+	at weblogic.deploy.internal.targetserver.operations.AbstractOperation.commit(AbstractOperation.java:339)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleDeploymentCommit(DeploymentManager.java:846)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.activateDeploymentList(DeploymentManager.java:1275)
+	at weblogic.deploy.internal.targetserver.DeploymentManager.handleCommit(DeploymentManager.java:442)
+	at weblogic.deploy.internal.targetserver.DeploymentServiceDispatcher.commit(DeploymentServiceDispatcher.java:176)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.doCommitCallback(DeploymentReceiverCallbackDeliverer.java:195)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer.access$100(DeploymentReceiverCallbackDeliverer.java:13)
+	at weblogic.deploy.service.internal.targetserver.DeploymentReceiverCallbackDeliverer$2.run(DeploymentReceiverCallbackDeliverer.java:68)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:553)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+Caused by: java.lang.IllegalStateException: No record found for selection of Trigger with key: 'DEFAULT.Sampler Trigger' and statement: SELECT * FROM QRTZ_SIMPLE_TRIGGERS WHERE SCHED_NAME = 'Demo Scheduler' AND TRIGGER_NAME = ? AND TRIGGER_GROUP = ?
+	at org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate.loadExtendedTriggerProperties(SimpleTriggerPersistenceDelegate.java:95)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTrigger(StdJDBCDelegate.java:1819)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1531)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$12.execute(JobStoreSupport.java:1522)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.executeInLock(JobStoreCMT.java:245)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeWithoutLock(JobStoreSupport.java:3739)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveTrigger(JobStoreSupport.java:1519)
+	at org.quartz.core.QuartzScheduler.getTrigger(QuartzScheduler.java:1530)
+	at org.quartz.core.QuartzScheduler.rescheduleJob(QuartzScheduler.java:1126)
+	at org.quartz.impl.StdScheduler.rescheduleJob(StdScheduler.java:321)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.addTriggerToScheduler(SchedulerAccessor.java:302)
+	at org.springframework.scheduling.quartz.SchedulerAccessor.registerJobsAndTriggers(SchedulerAccessor.java:235)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.afterPropertiesSet(SchedulerFactoryBean.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:732)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131)
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86)
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializer(WebAppServletContext.java:1394)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1331)
+	at weblogic.servlet.internal.WebAppServletContext.initContainerInitializers(WebAppServletContext.java:1317)
+	at weblogic.servlet.internal.WebAppServletContext.preloadResources(WebAppServletContext.java:1834)
+	at weblogic.servlet.internal.WebAppServletContext.start(WebAppServletContext.java:2876)
+	at weblogic.servlet.internal.WebAppModule.startContexts(WebAppModule.java:1661)
+	at weblogic.servlet.internal.WebAppModule.start(WebAppModule.java:823)
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:360)
+	at weblogic.application.internal.ExtensibleModuleWrapper$StartStateChange.next(ExtensibleModuleWrapper.java:356)
+	at weblogic.application.utils.StateMachineDriver.nextState(StateMachineDriver.java:42)
+	at weblogic.application.internal.ExtensibleModuleWrapper.start(ExtensibleModuleWrapper.java:138)
+> 

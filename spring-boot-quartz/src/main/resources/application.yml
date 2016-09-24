@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    jndi-name: jndi/demo
+#    url: jdbc:oracle:thin:@localhost:49161:xe
+#    username: system
+#    password: oracle
+#    driverClassName: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        proc:
+          param_null_passing: true
