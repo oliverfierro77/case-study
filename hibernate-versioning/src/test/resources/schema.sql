@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS book;
-;;;
+;;
 DROP TRIGGER IF EXISTS add_book_last_modified_date;
 ;;
 CREATE TABLE book (

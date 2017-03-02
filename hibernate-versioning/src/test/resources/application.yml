@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:hsqldb:file:target/database/hsql
-    delimiter: ;;
+    separator: ;;
   jpa:
     hibernate:
       ddl-auto: validate
