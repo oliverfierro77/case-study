@@ -1,9 +1,9 @@
 package com.apixandru.casestudy.hibernateversioning;
 
 import org.hibernate.annotations.Generated;
-import org.hibernate.annotations.OptimisticLocking;
 
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Version;
@@ -16,7 +16,7 @@ import static org.hibernate.annotations.GenerationTime.ALWAYS;
  * @since March 02, 2017
  */
 @Entity
-@OptimisticLocking
+@EntityListeners(LastModifiedByListener.class)
 public class Book {
 
     @Id
@@ -26,6 +26,8 @@ public class Book {
     @Generated(ALWAYS)
     @Version
     private Date lastModifiedDate;
+
+    private String lastModifiedBy;
 
     private String name;
 
@@ -39,6 +41,14 @@ public class Book {
 
     public Date getLastModifiedDate() {
         return lastModifiedDate;
+    }
+
+    public String getLastModifiedBy() {
+        return lastModifiedBy;
+    }
+
+    public void setLastModifiedBy(String lastModifiedBy) {
+        this.lastModifiedBy = lastModifiedBy;
     }
 
 }
