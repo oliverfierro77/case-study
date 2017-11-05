@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns="http://xmlns.oracle.com/weblogic/weblogic-connector"
+                    xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-connector http://xmlns.oracle.com/weblogic/weblogic-connector/1.2/weblogic-connector.xsd">
+    <native-libdir></native-libdir>
+    <jndi-name>horse</jndi-name>
+    <enable-access-outside-app>false</enable-access-outside-app>
+    <enable-global-access-to-classes>false</enable-global-access-to-classes>
+    <deploy-as-a-whole>true</deploy-as-a-whole>
+    <admin-objects>
+        <admin-object-group>
+            <admin-object-interface>javax.jms.Queue</admin-object-interface>
+        </admin-object-group>
+        <admin-object-group>
+            <admin-object-interface>javax.jms.Topic</admin-object-interface>
+        </admin-object-group>
+        <admin-object-group>
+            <admin-object-interface>javax.jms.ConnectionFactory</admin-object-interface>
+        </admin-object-group>
+        <admin-object-group>
+            <admin-object-interface>javax.jms.XAConnectionFactory</admin-object-interface>
+        </admin-object-group>
+    </admin-objects>
+    <outbound-resource-adapter>
+        <connection-definition-group>
+            <connection-factory-interface>javax.jms.ConnectionFactory</connection-factory-interface>
+            <connection-instance>
+                <jndi-name>cf/activemq-xa</jndi-name>
+            </connection-instance>
+        </connection-definition-group>
+        <connection-definition-group>
+            <connection-factory-interface>javax.jms.QueueConnectionFactory</connection-factory-interface>
+        </connection-definition-group>
+        <connection-definition-group>
+            <connection-factory-interface>javax.jms.TopicConnectionFactory</connection-factory-interface>
+        </connection-definition-group>
+    </outbound-resource-adapter>
+</weblogic-connector>

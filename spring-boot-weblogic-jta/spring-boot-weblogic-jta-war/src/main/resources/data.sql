@@ -1,0 +1,1 @@
+insert into sample_entity (id, random_stuff) values (default, 'File');

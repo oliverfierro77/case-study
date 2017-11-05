@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    jndi-name: jdbc/derbyxa
+    continue-on-error: true
+  jms:
+    jndi-name: cf/activemq-xa
+
+#debug: true
